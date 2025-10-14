@@ -1,0 +1,40 @@
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Editor/OS specific files
+.vscode/
+.idea/
+.DS_Store
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Database files (if using SQLite)
+*.sqlite3
+*.db
+
+# Configuration files with sensitive data (e.g., API keys, passwords)
+.env
+config.ini
+settings.pyc
+
+# Build artifacts
+dist/
+build/
+
+# Test reports
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Other commonly ignored files
+*.egg-info/
+*.so
