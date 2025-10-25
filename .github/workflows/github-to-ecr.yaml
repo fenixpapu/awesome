@@ -43,4 +43,5 @@ jobs:
 
       - name: Push image
         run: |
-          docker push $(aws ecr describe-repositories --repository-names $ECR_REPOSITORY --query 'repositories[0].repositoryUri' --output text):${{ env.image_tag }}
+          ECR_URI=$(aws ecr describe-repositories --repository-names $ECR_REPOSITORY --query 'repositories[0].repositoryUri' --output text)
+          docker push $ECR_URI:$IMAGE_TAG
